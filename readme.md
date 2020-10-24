@@ -106,4 +106,8 @@
         - *npm install pg sequelize*
     - initialize sequilize
         -*sequelize init*
-2.
+2. in the config/config.json file update dialect to postgress (or anything you are using) and update database name as well
+3. Create databease inside of Postgres
+    - *sequelize db:create userapp_development*
+4. Create a model and a matching migration
+    - *sequelize model:create --name user --attributes firstName:string,lastName:string,age:integer,email:string*
