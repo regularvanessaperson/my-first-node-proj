@@ -20,7 +20,7 @@
 4. Initialize empty git repository by using *git init*
 5. In the index.js file use require to import the express module then create an instance
     - const express = require("express")
-    - const app = express()n
+    - const app = express()
 6. To create a home route start with function below 
     app.get("/", (req,res)=>{
         res.send("Hello,world!")
@@ -92,3 +92,18 @@
     res.render("animals.ejs", {animals: ["sand crab", "corny joke dog"]})
     })
 7. In each ejs file make a template
+## Sequelize
+1. Setup with following in terminal
+    - only install once like this and it should be available for futurenpm 
+        - *install -g sequelize-cli* 
+    - create folder and initialize repository
+        - *mkdir userapp*
+        - *cd userapp*
+        - *npm init -y*
+        - *touch index.js*
+        - *echo "node_modules" >> .gitignore*
+    - add/save dependencies (below is for Postgres)
+        - *npm install pg sequelize*
+    - initialize sequilize
+        -*sequelize init*
+2.
